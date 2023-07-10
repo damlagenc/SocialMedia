@@ -1,0 +1,15 @@
+@model User
+
+<div>
+    <h3 class="display-4">Congrats @Model.FullName</h3>
+    <p class="lead">Your profile is created. </p>
+    <blockquote class="blockquote">
+        you have enrolled to @Model.UserName
+    </blockquote>
+    <p class="text-muted">You registered at @Model.RegisterAt . </p>
+
+    <div class="btn-group">
+        <a class="btn btn-outline-success"  asp-action="Index">Users</a>
+        <a class="btn btn-outline-success"  asp-action="Index" asp-controller="Home">Home</a>
+    </div>
+</div>

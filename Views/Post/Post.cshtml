@@ -1,0 +1,27 @@
+
+@model IEnumerable<SocialMedia.Models.Post>
+
+@{
+    ViewData["Title"] = "Post Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Social Media</h1>
+    <p>
+        <a asp-action="Profile" asp-controller="Profile">View Profile</a>
+    </p>
+</div>
+
+<hr />
+
+<div>
+    <h3>Create a New Post</h3>
+    <form method="post" asp-action="Create" asp-controller="Post">
+        <div class="form-group">
+            <textarea name="content" rows="3" class="form-control" placeholder="Enter your post content"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+</div>
+
+<hr />
